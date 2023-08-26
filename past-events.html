@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Events</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="/Imagenes/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -14,34 +14,194 @@
 <body>
 
     <div>
-        <div>
 
-            <ul class="nav justify-content-end">
-                <img class="nav d-flex justify-content-start" src="/Imagenes/amazing_brand.png" alt="Logo" width="100" height="50">
+<!-- barra de navegagción -->
+        <nav>
+            <img src="/Imagenes/amazing_brand.png" class="rounded float-start" alt="Logo" width="100" height="70">
+
+            <ul class="barraspr nav justify-content-end gap-3 p-3">
+                
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="btn btn-primary nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="upcoming-events.html">Upcoming Events</a>
+                    <a class="btn btn-primary nav-link active" href="upcoming-events.html">Upcoming Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="past-events.html">Past Events</a>
+                    <a class="btn btn-primary nav-link active" href="past-events.html">Past Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="btn btn-primary nav-link active" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="stats.html">Stats</a>
+                    <a class="btn btn-primary nav-link active" href="stats.html">Stats</a>
                 </li>
             </ul>
 
 
-        </div>
+        </nav>
+
+        <maIn>
+            <!-- cuerpo de la página con carousel -->
+
+            <div id="carouselExampleDark" class="carousel carousel-withe slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./Imagenes/outing_to_the_museum.jpg" class="d-block w-100" alt="home">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Home</h5>
+                          
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Imagenes/music_concert.jpg" class="d-block w-100" alt="upcoming-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Upcoming Events</h5>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Imagenes/costume_party.jpg" class="d-block w-100" alt="past-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Past Events</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imagenes/optional_banner_5.jpg" class="d-block w-100" alt="past-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Contact</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imagenes/books.jpg" class="d-block w-100" alt="home">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Stats</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+<!-- checkboxs y barra de buscador -->
+            <div>
+
+                <nav class="barraspr navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-row gap-4">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                        </div>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+<!-- tarjetas con eventos pasados y próximos -->
+                <article class="tablas d-flex gap-4 justify-content-center p-5">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Imagenes/music_concert.jpg" class="card-img-top" alt="..." height="200">
+                        <div class="card-body">
+                          <h5 class="card-title">Upcoming Events</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="details.html" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="/Imagenes/costume_party.jpg" class="card-img-top" alt="..." height="200">
+                        <div class="card-body">
+                          <h5 class="card-title">Past Events</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="details.html" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="/Imagenes/cinema.jpg" class="card-img-top" alt="..." height="200">
+                        <div class="card-body">
+                          <h5 class="card-title">Upcoming Events</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="details.html" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img src="/Imagenes/food_fair.jpg" class="card-img-top" alt="..." height="200">
+                        <div class="card-body">
+                          <h5 class="card-title">Past Events</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="details.html" class="btn btn-primary">Details</a>
+                        </div>
+                      </div>
+
+                </article>
+
+
+
+            </div>
+<!-- pie de página -->
+            <footer>
+
+                <nav class="barra navbar ">
+                    <div class="container d-flex justify-content-start">
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/facebook.png" alt="facebook" width="30" height="24">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/instagram.png" alt="instagram" width="30" height="24">
+                      </a>
+                    </div>
+                    <h6 class="d-flex m-4">COHORT</h6>
+                  </nav>
+
+            </footer>
+
+
+        </maIn>
+
+
+
 
 
 
     </div>
-
 
 
 

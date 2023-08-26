@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="/Imagenes/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -13,33 +13,94 @@
 
 <body>
 
-
     <div>
+<!-- barra de navegagción -->
+        <div class="contenedorpr">
 
-        <div>
-
-            <ul class="nav justify-content-end">
-                <img class="d-flex justify-content-start" src="/Imagenes/amazing_brand.png" alt="Logo" width="100" height="50">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="upcoming-events.html">Upcoming Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="past-events.html">Past Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="stats.html">Stats</a>
-                </li>
-            </ul>
+            <div>
 
 
+                <nav>
+                    <img src="/Imagenes/amazing_brand.png" class="rounded float-start" alt="Logo" width="100"
+                        height="70">
+
+                    <ul class="barraspr nav justify-content-end gap-3 p-3">
+
+                        <li class="nav-item">
+                            <a class="btn btn-primary nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary nav-link active" href="upcoming-events.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary nav-link active" href="past-events.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary nav-link active" href="stats.html">Stats</a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+
+            <!-- artículo con imagen y detalle del evento -->
+            <main class="maindetalle tablas p-5">
+
+                <section class=" p-5">
+
+
+                    <div class="seccion row g-7 justify-content-center align-items-center border">
+                        <div class="col-md-5">
+                            <img src="/Imagenes/marathon.jpg" class="img-fluid rounded-start" alt="imgprin" height="80">
+                        </div>
+                        <div class="contenedortext col-md-5 p-4 border">
+                            <div class="card-body">
+                                <h3 class="card-title p-3 text-center">Title</h3>
+                                <ul>
+                                    <li class="li1">Event data</li>
+                                    <li class="li2">Event data</li>
+                                    <li class="li3">Event data</li>
+                                    <li class="li4">Event data</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
         </div>
 
+        <!-- pie de página --> 
+
+        <footer>
+
+            <nav class="barra navbar">
+                <div class="container d-flex justify-content-start">
+                    <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/facebook.png" alt="facebook" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/instagram.png" alt="instagram" width="30" height="24">
+                    </a>
+                </div>
+                <h6 class="d-flex m-4">COHORT</h6>
+            </nav>
+
+        </footer>
+
+
+
+
+
+        
 
 
     </div>

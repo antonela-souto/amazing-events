@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="/Imagenes/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -13,34 +13,234 @@
 
 <body>
     <div>
+        <!-- barra de navegagción -->
+        <nav>
+            <img src="/Imagenes/amazing_brand.png" class="rounded float-start" alt="Logo" width="100" height="70">
+            <ul class="barraspr nav justify-content-end gap-3 p-3">
 
-        <div>
-
-
-
-            <ul class="nav justify-content-end">
-                <img class="d-flex justify-content-start" src="/Imagenes/amazing_brand.png" alt="Logo" width="100" height="50">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="btn btn-primary nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="upcoming-events.html">Upcoming Events</a>
+                    <a class="btn btn-primary nav-link active" href="upcoming-events.html">Upcoming Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="past-events.html">Past Events</a>
+                    <a class="btn btn-primary nav-link active" href="past-events.html">Past Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="btn btn-primary nav-link active" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="stats.html">Stats</a>
+                    <a class="btn btn-primary nav-link active" href="stats.html">Stats</a>
                 </li>
             </ul>
 
 
-        </div>
+        </nav>
+        <main>
+            <div>
+<!-- cuerpo de la página con carousel -->
+                <div id="carouselExampleDark" class="carousel carousel-withe slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./Imagenes/outing_to_the_museum.jpg" class="d-block w-100" alt="home">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="titcar .text-warning-emphasis text-center">Home</h5>
+                               
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./Imagenes/music_concert.jpg" class="d-block w-100" alt="upcoming-events">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="titcar .text-warning-emphasis text-center">Upcoming Events</h5>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Imagenes/costume_party.jpg" class="d-block w-100" alt="past-events">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="titcar .text-warning-emphasis text-center">Past Events</h5>
+                               
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Imagenes/optional_banner_5.jpg" class="d-block w-100" alt="past-events">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="titcar .text-warning-emphasis text-center">Contact</h5>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./Imagenes/books.jpg" class="d-block w-100" alt="home">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="titcar .text-warning-emphasis text-center">Stats</h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
 
+
+            </div>
+
+<!-- creación de tablas -->
+
+            <section class="tablas p-5">
+
+                <table class="table table-bordered p-2">
+                    <thead>
+                        <tr>
+                            <td class="bg-dark text-light" colspan="3">
+                                <h5>Events Estatics</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th class="text-center">Events with highest % of assistance</th>
+                            <th class="text-center">Events with lowest % of assistance</th>
+                            <th class="text-center">Events with lagesr capacity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                        </tr>
+
+                    </tbody>
+
+
+                    <tbody class="border">
+                        <tr>
+                            <td class="bg-dark text-light" colspan="3">
+                                <h5>Upcoming events statics by category</h5>
+                            </td>
+                        </tr>
+                        
+
+                    </tbody>
+                    <tbody>
+
+
+                        <tr class="border">
+
+                            <td>Category</td>
+                            <td>Revenues</td>
+                            <td>Percentage of assistance</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+
+                        </tr>
+                    </tbody>
+
+
+                    <tbody>
+                        <tr>
+                            <td class="bg-dark text-light" colspan="3">
+                                <h5>Past events statics by category</h5>
+                            </td>
+                        </tr>
+                       
+
+                    </tbody>
+                    <tbody>
+
+                        <tr>
+                            <td>Category</td>
+                            <td>Revenues</td>
+                            <td>Percentage of assistance</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+<!-- pie de página --> 
+            <footer>
+
+                <nav class="barra navbar">
+                    <div class="container d-flex justify-content-start">
+                        <a class="navbar-brand" href="#">
+                            <img src="/Imagenes/facebook.png" alt="facebook" width="30" height="24">
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <img src="/Imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <img src="/Imagenes/instagram.png" alt="instagram" width="30" height="24">
+                        </a>
+                    </div>
+                    <h6 class="d-flex m-4">COHORT</h6>
+                </nav>
+
+            </footer>
+
+
+
+
+
+        </main>
 
 
     </div>

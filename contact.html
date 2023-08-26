@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="/Imagenes/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -13,33 +13,144 @@
 
 <body>
 
-
+<!-- barra de navegagción -->
     <div>
 
-        <div>
+        <nav>
+            <img src="/Imagenes/amazing_brand.png" class="rounded float-start" alt="Logo" width="100" height="70">
+            <ul class="barraspr nav justify-content-end gap-3 p-3">
 
-            <ul class="nav justify-content-end">
-                <img class="d-flex justify-content-start" src="/Imagenes/amazing_brand.png" alt="Logo" width="100" height="50">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="btn btn-primary nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="upcoming-events.html">Upcoming Events</a>
+                    <a class="btn btn-primary nav-link active" href="upcoming-events.html">Upcoming Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="past-events.html">Past Events</a>
+                    <a class="btn btn-primary nav-link active" href="past-events.html">Past Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="btn btn-primary nav-link active" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="stats.html">Stats</a>
+                    <a class="btn btn-primary nav-link active" href="stats.html">Stats</a>
                 </li>
             </ul>
 
 
-        </div>
+        </nav>
+ <!-- cuerpo de la página con carousel -->
+        <main class="contenedorpadre tablas d-flex flex-column align-items-center">
 
+            <div id="carouselExampleDark" class="carousel carousel-withe slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./Imagenes/outing_to_the_museum.jpg" class="d-block w-100" alt="home">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Home</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Imagenes/music_concert.jpg" class="d-block w-100" alt="upcoming-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Upcoming Events</h5>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imagenes/costume_party.jpg" class="d-block w-100" alt="past-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Past Events</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Imagenes/optional_banner_5.jpg" class="d-block w-100" alt="past-events">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Contact Us</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Imagenes/books.jpg" class="d-block w-100" alt="home">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titcar .text-warning-emphasis text-center">Stats</h5>
+                        
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+<!-- formulario -->
+            <fieldset class="formulario p-5">
+
+                <div class="nombre d-flex flex-column mb-3">
+
+                    <label for="exampleFormControlInput1" class="text-light form-label">Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput14">
+                </div>
+                <div class="email">
+                    <label for="exampleFormControlInput3" class="text-light form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput11"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="mensaje d-flex flex-column mb-3">
+                    <label for="exampleFormControlTextarea5" class="text-light form-label">Mesagge</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea12" rows="3"></textarea>
+                </div>
+                <div class="enviar flex-end">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                
+
+            </fieldset>
+
+<!-- pie de página -->            
+            <footer class="footer">
+
+                <nav class="barra navbar">
+                    <div class="container d-flex justify-content-start">
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/facebook.png" alt="facebook" width="30" height="24">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/whatsapp.png" alt="whatsapp" width="30" height="24">
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <img src="/Imagenes/instagram.png" alt="instagram" width="30" height="24">
+                      </a>
+                    </div>
+                    <h6 class="d-flex m-4">COHORT</h6>
+                  </nav>
+
+            </footer>
+
+        </main>
 
     </div>
 
