@@ -1,11 +1,15 @@
 let arrayEvents = data.events
 
 
+let fechaEventos = data.currentDate
+
+
+
 let template = ""
 
 for (let events of arrayEvents){
-
-template += `<div class="card" style="width: 18rem;">
+if (events.date < fechaEventos){
+    template += `<div class="card" style="width: 18rem;">
     <img src="${events.image}" class="card-img-top" alt="..." height="200">
     <div class="card-body">
         <h5 class="card-title">${events.name}</h5>
@@ -15,7 +19,9 @@ template += `<div class="card" style="width: 18rem;">
     </div>
     </div>`
 } 
-const $contenedorcards = document.getElementById('contenedorcards')
-console.log($contenedorcards)
+}
 
-$contenedorcards.innerHTML = template
+const $contenedorcards3 = document.getElementById('contenedorcards3')
+console.log($contenedorcards3)
+
+$contenedorcards3.innerHTML = template
