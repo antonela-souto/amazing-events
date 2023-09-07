@@ -112,7 +112,7 @@
 
                 <nav class="barraspr navbar">
                     <div class="container-fluid">
-                        <div class="d-flex flex-row gap-4">
+                        <div id="contenedorChecks" class="d-flex flex-row gap-4">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                             <label class="form-check-label" for="inlineCheckbox2">Category</label>
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
@@ -125,10 +125,10 @@
                             <label class="form-check-label" for="inlineCheckbox2">Category</label>
                         </div>
 
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <div class="d-flex" role="search">
+                            <input id="buscar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        </div>
                     </div>
                 </nav>
                 <!-- tarjetas con eventos pasados y próximos -->
@@ -174,8 +174,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="/data.js"></script>
-    <script src="/main.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
