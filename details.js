@@ -1,26 +1,45 @@
-// declaración de variables
+// guardo la API de Eventos en una variable
 
-const locationSearch = location.search
+let ApiUrl = "https://mindhub-xj03.onrender.com/api/amazing"
 
-const objetoURL = new URLSearchParams(locationSearch)
+fetch(ApiUrl)
 
-const valorKeyParams = objetoURL.get('id')
+  .then(response => response.json())
+  .then(data => {
 
-let arrayEvents = data.events
+    // declaración de variables
 
-let nombreEvento = arrayEvents.find(events => events._id == valorKeyParams)
+    const locationSearch = location.search
+
+    const objetoURL = new URLSearchParams(locationSearch)
+
+    const valorKeyParams = objetoURL.get('id')
+
+    let arrayEvents = data.events
+
+    let nombreEvento = arrayEvents.find(events => events._id == valorKeyParams)
 
 
-// capturo el contenedor del HTML donde se van a colocar las cards
+    // capturo el contenedor del HTML donde se van a colocar las cards
 
-const $contenedordetalles = document.getElementById('contenedordetalles')
-console.log($contenedordetalles);
+    const $contenedordetalles = document.getElementById('contenedordetalles')
+    console.log($contenedordetalles);
+
+    imprimirCardsEnHTML($contenedordetalles, nombreEvento)
+
+    // cración del catch con un mensaje si ocurre algún error (promesa que no se cumple)
+  })
+  .catch(error => {
+    console.error("Error al obtener datos de la API:", error);
+  });
+
+
 
 // función que crea la estructura de las cards
 
 function crearEstructuraCard(events) {
-    let template = ""
-    template = `
+  let template = ""
+  template = `
   <div class="col-md-5">
     <img src="${events.image}" class="img-fluid rounded-start" alt="imgprin" height="80">
   </div>
@@ -38,13 +57,13 @@ function crearEstructuraCard(events) {
     </div>
 
     `
-    return template
+  return template
 }
 
 // función que imprime cards 
 
 function imprimirCardsEnHTML(elementoHTML, events) {
- elementoHTML.innerHTML = crearEstructuraCard(events)
+  elementoHTML.innerHTML = crearEstructuraCard(events)
 }
 
-imprimirCardsEnHTML($contenedordetalles, nombreEvento)
+
